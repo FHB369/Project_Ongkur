@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:background="@drawable/ic_group_3"
-            android:text="রেজিস্টার করুণ"
+            android:text="রেজিস্টার করুন"
             android:textColor="@color/colorAccent"
             android:textSize="20sp"/>
 
@@ -105,7 +105,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_group_3"
-            android:text="পুর্বের একাউন্টে লগিন করুণ"
+            android:text="পূর্বের একাউন্টে লগইন করুন"
             android:textColor="@color/colorAccent"
             android:textSize="16sp"/>
     </LinearLayout>

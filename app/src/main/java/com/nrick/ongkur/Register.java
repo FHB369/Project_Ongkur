@@ -29,7 +29,7 @@ public class Register extends AppCompatActivity {
     private ProgressBar progressBar;
     private ImageView logo;
     private FirebaseAuth mAuth;
-    private DatabaseReference mDatabase, mDatabase1;
+    private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +75,7 @@ public class Register extends AppCompatActivity {
                 }
                 else {
                     logo.setVisibility(View.GONE);
+                    name.setVisibility(View.GONE);
                     email.setVisibility(View.GONE);
                     password.setVisibility(View.GONE);
                     login.setVisibility(View.GONE);
@@ -121,7 +122,7 @@ public class Register extends AppCompatActivity {
                                     Toast.LENGTH_SHORT).show();
 
                             progressBar.setVisibility(View.GONE);
-                            Intent intent = new Intent(Register.this, Home.class);
+                            Intent intent = new Intent(Register.this, SliderOne.class);
                             startActivity(intent);
                             finish();
                         } else {

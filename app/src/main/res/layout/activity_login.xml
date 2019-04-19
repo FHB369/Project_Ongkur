@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:background="@drawable/ic_group_3"
-            android:text="লগিন করুণ"
+            android:text="লগইন করুন"
             android:textColor="@color/colorAccent"
             android:textSize="20sp"/>
 

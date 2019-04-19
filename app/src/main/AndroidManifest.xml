@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.nrick.ongkur">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,9 +11,26 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Register"
-            android:theme="@style/AppTheme.FullScreen" ></activity>
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme">
+        <activity android:name=".PreVrWarning"></activity>
+        <activity android:name=".CompanionChooser" />
+        <activity
+            android:name=".SliderFour"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity android:name=".CatagoryChooser" />
+        <activity
+            android:name=".SliderThree"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".SliderTwo"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".SliderOne"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".Register"
+            android:theme="@style/AppTheme.FullScreen" />
         <activity
             android:name=".Home"
             android:theme="@style/AppTheme.FullScreen" />
