@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/ic_bg">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/topLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@drawable/ic_logo" />
+
+        <EditText
+            android:id="@+id/editText_guardian_name_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:ems="10"
+            android:hint="আপনার নাম"
+            android:inputType="text"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"/>
+
+        <EditText
+            android:id="@+id/editText_name_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:ems="10"
+            android:hint="সন্তানের নাম"
+            android:inputType="text"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"/>
+        <EditText
+            android:id="@+id/editText_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:ems="10"
+            android:hint="ইমেইল এড্রেস"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"/>
+        <EditText
+            android:id="@+id/editText_phone_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:ems="10"
+            android:hint="মোবাইল নং"
+            android:inputType="phone"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"/>
+        <EditText
+            android:id="@+id/editText_password_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:ems="10"
+            android:hint="পাসওয়ার্ড"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/button_register_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ic_group_3"
+            android:text="রেজিস্টার করুণ"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button_login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_group_3"
+            android:text="পুর্বের একাউন্টে লগিন করুণ"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_register"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "5475363135",
+    "firebase_url": "https://ongkur-ccfe4.firebaseio.com",
+    "project_id": "ongkur-ccfe4",
+    "storage_bucket": "ongkur-ccfe4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5475363135:android:bb536c3f3e5a2120",
+        "android_client_info": {
+          "package_name": "com.nrick.ongkur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5475363135-d2oj8pcqdvbphbi2e6ec7872ph2u596s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nrick.ongkur",
+            "certificate_hash": "1a3ae193ab2a353aa59e34d5887029f1b202c5fe"
+          }
+        },
+        {
+          "client_id": "5475363135-l1ufs1sfkga4d6on6pq1mivq4vva2r6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfwRFI55xf1id_FUc930iGWvqR_XP4yVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5475363135-l1ufs1sfkga4d6on6pq1mivq4vva2r6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
