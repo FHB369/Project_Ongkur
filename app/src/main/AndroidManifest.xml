@@ -13,7 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon, android:theme">
-        <activity android:name=".PreVrWarning"></activity>
+        <activity android:name=".DailyGames"></activity>
+        <activity android:name=".NobinHome" />
+        <activity android:name=".feed" />
+        <activity android:name=".KURI" />
+        <activity android:name=".PreVrWarning" />
         <activity android:name=".CompanionChooser" />
         <activity
             android:name=".SliderFour"

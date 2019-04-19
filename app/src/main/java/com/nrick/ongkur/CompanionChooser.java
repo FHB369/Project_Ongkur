@@ -41,12 +41,12 @@ public class CompanionChooser extends AppCompatActivity  implements TextToSpeech
             @Override
             public void onClick(View v) {
                 if(isChanged){
-                    character.setBackground(getDrawable(R.drawable.character_1));
-                    hiText.setText("আমি পিকু, আমার বন্ধু হতে চাইলে আমার ছবির উপর ট্যাপ কর");
+                    character.setBackground(getDrawable(R.drawable.character_3));
+                    hiText.setText("আমি শিয়াল, আমার বন্ধু হতে চাইলে আমার ছবির উপর ট্যাপ কর");
                     isChanged = false;
                 }else{
-                    character.setBackground(getDrawable(R.drawable.character_2));
-                    hiText.setText("আমি সারা, আমার বন্ধু হতে চাইলে আমার ছবির উপর ট্যাপ কর");
+                    character.setBackground(getDrawable(R.drawable.character_4));
+                    hiText.setText("আমি পান্ডা, আমার বন্ধু হতে চাইলে আমার ছবির উপর ট্যাপ কর");
                     isChanged = true;
                 }
                 speakOut();
@@ -58,13 +58,13 @@ public class CompanionChooser extends AppCompatActivity  implements TextToSpeech
             @Override
             public void onClick(View v) {
                 if(isChanged){
-                    character.setBackground(getDrawable(R.drawable.character_1));
-                    hiText.setText("আমি পিকু, আমার বন্ধু হতে চাইলে আমার ছবির উপর ট্যাপ কর");
+                    character.setBackground(getDrawable(R.drawable.character_3));
+                    hiText.setText("আমি শিয়াল, আমার বন্ধু হতে চাইলে আমার ছবির উপর ট্যাপ কর");
                     isChanged = false;
                     speakOut();
                 }else{
-                    character.setBackground(getDrawable(R.drawable.character_2));
-                    hiText.setText("আমি সারা, আমার বন্ধু হতে চাইলে আমার ছবির উপর ট্যাপ কর");
+                    character.setBackground(getDrawable(R.drawable.character_4));
+                    hiText.setText("আমি পান্ডা, আমার বন্ধু হতে চাইলে আমার ছবির উপর ট্যাপ কর");
                     isChanged = true;
                     speakOut();
                 }
@@ -75,7 +75,7 @@ public class CompanionChooser extends AppCompatActivity  implements TextToSpeech
         character.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CompanionChooser.this, PreVrWarning.class);
+                Intent intent = new Intent(CompanionChooser.this, KURI.class);
                 startActivity(intent);
             }
         });

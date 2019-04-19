@@ -39,23 +39,17 @@ public class CatagoryChooser extends AppCompatActivity {
                 saveCatagory(2);
             }
         });
-
-        catagory3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                saveCatagory(3);
-            }
-        });
     }
 
     private void saveCatagory(int i) {
         String catagory = null;
+        Intent intent = null;
         if(i == 1){
             catagory = "KURI";
+            intent = new Intent(CatagoryChooser.this, Home.class);
         }else if(i == 2){
             catagory = "NOBIN";
-        }else if(i==3){
-            catagory = "PUSHPO";
+            intent = new Intent(CatagoryChooser.this, NobinHome.class);
         }
 
         mAuth = FirebaseAuth.getInstance();
@@ -63,9 +57,8 @@ public class CatagoryChooser extends AppCompatActivity {
         mDatabase = FirebaseDatabase.getInstance().getReference().child("USERS").child(UID);
         mDatabase.child("CURRENT_CATAGORY").setValue(catagory);
 
-        Intent intent = new Intent(CatagoryChooser.this, Home.class);
+
         startActivity(intent);
-        overridePendingTransition(R.anim.right_to_left, R.anim.right_to_left_exit);
         finish();
     }
 }
