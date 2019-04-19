@@ -13,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon, android:theme">
-        <activity android:name=".DailyGames"></activity>
+        <activity android:name=".ScanPlane"></activity>
+        <activity android:name=".FeedSuccess" />
+        <activity android:name=".GovernChild" />
+        <activity android:name=".DailyGames" />
         <activity android:name=".NobinHome" />
         <activity android:name=".feed" />
         <activity android:name=".KURI" />

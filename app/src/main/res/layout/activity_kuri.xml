@@ -39,8 +39,7 @@
         android:layout_width="138dp"
         android:layout_height="105dp"
         android:layout_marginTop="550sp"
-        android:text="LETS PLAY"
-        android:visibility="invisible"/>
+        android:background="@android:color/transparent" />
 
     <Button
         android:id="@+id/govern"
@@ -53,8 +52,7 @@
         android:layout_marginEnd="-290dp"
         android:layout_marginBottom="93dp"
         android:gravity="right"
-        android:text="Govern"
-        android:visibility="invisible" />
+        android:background="@android:color/transparent" />
 
     <Button
         android:id="@+id/reward"
@@ -64,7 +62,6 @@
         android:layout_marginStart="292dp"
         android:layout_marginTop="600sp"
         android:gravity="left"
-        android:text="REWARD"
-        android:visibility="invisible" />
+        android:background="@android:color/transparent"  />
 
 </RelativeLayout>

@@ -115,7 +115,6 @@ public class Register extends AppCompatActivity {
                             mDatabase.child("NAME").setValue(NAME);
                             mDatabase.child("EMAIL").setValue(EMAIL);
                             mDatabase.child("PHONE").setValue(PHONE);
-                            mDatabase.child("PASSWORD").setValue(PASSWORD);
                             mDatabase.child("GUARDIAN_NAME").setValue(GUARDIAN_NAME);
 
                             Toast.makeText(getApplicationContext(), "Welcome "+NAME,

@@ -39,7 +39,10 @@ public class feed extends AppCompatActivity   implements TextToSpeech.OnInitList
         okay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(feed.this, FeedSuccess.class);
+                intent.putExtra("CNT", count);
+                startActivity(intent);
+                finish();
             }
         });
 

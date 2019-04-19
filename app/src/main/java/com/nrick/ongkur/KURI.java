@@ -40,14 +40,16 @@ public class KURI extends AppCompatActivity {
         govern.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(KURI.this, GovernChild.class);
+                startActivity(intent);
             }
         });
 
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(KURI.this, DailyGames.class);
+                startActivity(intent);
             }
         });
     }

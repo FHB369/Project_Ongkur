@@ -16,7 +16,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class Login extends AppCompatActivity {
 
@@ -99,9 +103,30 @@ public class Login extends AppCompatActivity {
     }
 
     private void divertUser(String uid) {
-        Intent intent = new Intent(Login.this, Home.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.right_to_left, R.anim.right_to_left_exit);
-        finish();
+        DatabaseReference mDatabaseGEN;
+        mDatabaseGEN = FirebaseDatabase.getInstance().getReference().child("USERS").child(uid);
+        mDatabaseGEN.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String catagory = (String) dataSnapshot.child("CURRENT_CATAGORY").getValue();
+
+                if(catagory.equals("KURI")){
+                    Intent intent = new Intent(Login.this, KURI.class);
+                    overridePendingTransition(R.anim.slow_fade_in, R.anim.bottom_to_top);
+                    startActivity(intent);
+                    finish();
+                }else if(catagory.equals("NOBIN")){
+                    Intent intent = new Intent(Login.this, NobinHome.class);
+                    overridePendingTransition(R.anim.slow_fade_in, R.anim.bottom_to_top);
+                    startActivity(intent);
+                    finish();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
     }
 }

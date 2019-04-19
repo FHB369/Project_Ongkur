@@ -4,6 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NobinHome">
+    tools:context=".NobinHome"
+    android:background="#ebeae9">
 
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/character_1" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginVertical="30dp"
+            android:text="চলো ঘুরে আসি ভার্চুয়াল ওয়ার্ল্ড থেকে। খুজে বের কর আমাকে"
+            />
+
+        <Button
+            android:id="@+id/buttonStartNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="এসো শূরু করি"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:background="@drawable/ic_group_3"/>
+
+        <Button
+            android:id="@+id/buttonLogOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="লগ আঊট"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_group_3"/>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
