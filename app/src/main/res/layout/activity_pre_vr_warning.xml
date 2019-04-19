@@ -6,4 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".PreVrWarning">
 
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="তোমার ফোন ভি আর হেডসেটে সংযুক্ত কর"
+            android:textSize="20dp"
+            android:layout_marginVertical="20dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="শুরু করুন"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:background="@drawable/ic_group_3"/>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
