@@ -10,7 +10,7 @@ import android.widget.Button;
 
 import java.util.Locale;
 
-public class DailyGames extends AppCompatActivity implements TextToSpeech.OnInitListener{
+public class DailyGames2 extends AppCompatActivity implements TextToSpeech.OnInitListener{
 
     private Button start, startYourself, tryElse;
     private TextToSpeech tts;
@@ -18,11 +18,11 @@ public class DailyGames extends AppCompatActivity implements TextToSpeech.OnInit
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_daily_games);
+        setContentView(R.layout.activity_daily_games2);
 
-        start = findViewById(R.id.buttonStartTogether);
-        startYourself = findViewById(R.id.buttonStartYourself);
-        tryElse = findViewById(R.id.buttonTryElse);
+        start = findViewById(R.id.buttonStartTogether2);
+        startYourself = findViewById(R.id.buttonStartYourself2);
+        tryElse = findViewById(R.id.buttonTryElse2);
 
         tts = new TextToSpeech(this, this);
 
@@ -30,7 +30,7 @@ public class DailyGames extends AppCompatActivity implements TextToSpeech.OnInit
             @Override
             public void onClick(View v) {
                 System.out.println("Entered");
-                Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.linkon.Plane");
+                Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.linkon.drawingVR");
                 if (launchIntent != null) {
                     startActivity(launchIntent);//null pointer check in case package name was not found
                 }
@@ -40,7 +40,7 @@ public class DailyGames extends AppCompatActivity implements TextToSpeech.OnInit
         startYourself.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DailyGames.this, ScanPlane.class);
+                Intent intent = new Intent(DailyGames2.this, ScanPicture.class);
                 startActivity(intent);
                 finish();
             }
@@ -49,7 +49,7 @@ public class DailyGames extends AppCompatActivity implements TextToSpeech.OnInit
         tryElse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DailyGames.this, DailyGames2.class);
+                Intent intent = new Intent(DailyGames2.this, DailyGames.class);
                 startActivity(intent);
                 finish();
             }
@@ -77,10 +77,10 @@ public class DailyGames extends AppCompatActivity implements TextToSpeech.OnInit
                     || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Log.e("TTS", "This Language is not supported");
             } else {
-                speakOut("আজকে আমরা পেপার প্লেন বানাবো, তুমি কি শিখতে চাও?    চলো একসাথে শুরু করি। " +
+                speakOut("আজকে আমরা ছবি আঁকব, তুমি কি শিখতে চাও?    চলো একসাথে শুরু করি"+
                         "শেখা শুরু করতে প্রথম বাটনে ট্যাপ করো।" +
-                        "যদি নিজেই বানাতে চাও তাহলে দ্বিতীয় বাটনে ট্যাপ করো।" +
-                        "অন্য কিছু খেলতে চাইলে তৃতীয় বাটনে ট্যাপ করো। ");
+                        "ইতোমধ্যে ছবি আঁকা শেষ হলে দ্বিতীয় বাটনে ট্যাপ করো।" +
+                        "অন্য কিছু খেলতে চাইলে তৃতীয় বাটনে ট্যাপ করো।" );
             }
 
         } else {

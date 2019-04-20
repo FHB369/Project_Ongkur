@@ -115,7 +115,14 @@ public class Register extends AppCompatActivity {
                             mDatabase.child("NAME").setValue(NAME);
                             mDatabase.child("EMAIL").setValue(EMAIL);
                             mDatabase.child("PHONE").setValue(PHONE);
+                            mDatabase.child("CURRENT_POINT").setValue("0");
                             mDatabase.child("GUARDIAN_NAME").setValue(GUARDIAN_NAME);
+
+                            Long tsLong = System.currentTimeMillis()/1000;
+                            String ts = tsLong.toString();
+
+                            mDatabase = FirebaseDatabase.getInstance().getReference().child("GAME_1").child(UID);
+                            mDatabase.child(ts).setValue("0");
 
                             Toast.makeText(getApplicationContext(), "Welcome "+NAME,
                                     Toast.LENGTH_SHORT).show();

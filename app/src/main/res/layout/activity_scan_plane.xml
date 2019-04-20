@@ -1,11 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScanPlane">
+    tools:context=".ScanPlane" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="নিচের ছবিগুলোর মধ্যে বিমানগুলো নির্বাচন কর"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
 
 
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="179dp"
+        android:paddingTop="80dp"
+        android:layout_height="214dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="2dp"
+        app:srcCompat="@drawable/bus" />
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="97dp"
+        app:srcCompat="@drawable/buny" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="179dp"
+        android:layout_height="189dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="292dp"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="171dp"
+
+        android:layout_height="201dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="287dp"
+        app:srcCompat="@drawable/hung" />
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="97dp"
+        app:srcCompat="@drawable/fly" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="176dp"
+        android:layout_height="216dp"
+        android:paddingTop="80dp"
+        app:srcCompat="@drawable/o" />
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/ic_group_3"
+        android:text="নির্বাচন করলাম"
+        android:textColor="@color/colorAccent"
+        android:textSize="17dp" />
+</RelativeLayout>

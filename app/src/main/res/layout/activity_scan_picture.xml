@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FeedSuccess">
+    tools:context=".ScanPicture">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="395dp"
+        android:layout_height="715dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -18,22 +18,24 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:padding="40dp">
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/congrats" />
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="অভিনন্দন "
             android:textAlignment="center"
-            android:textSize="60sp"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:text="তাহলে চল ছবিটি যাচাই করা যাক"
+            android:textSize="25dp"/>
+
+        <Button
+            android:id="@+id/buttonScanPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="শুরু কর"
+            android:textSize="20dp"
+            android:layout_marginVertical="20dp"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/ic_group_3"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

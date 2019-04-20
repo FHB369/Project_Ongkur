@@ -21,5 +21,11 @@ public class FeedSuccess extends AppCompatActivity {
         DatabaseReference mRef = FirebaseDatabase.getInstance().getReference().child("USERS").child(FirebaseAuth.getInstance().getUid());
 
         mRef.child("CURRENT_POINT").setValue(String.valueOf(point));
+
+        Long tsLong = System.currentTimeMillis()/1000;
+        String ts = tsLong.toString();
+
+        mRef = FirebaseDatabase.getInstance().getReference().child("GAME_1").child(FirebaseAuth.getInstance().getUid());
+        mRef.child(ts).setValue(String.valueOf(point));
     }
 }
